@@ -1,20 +1,13 @@
-import "./styles/main.css";
-import "./styles/bootstrap.min.css";
-import "./styles/modesta.css";
-
 import { Inter } from 'next/font/google'
-
-import FooterComponent from '@/components/footer';
-import Navbar from "@/components/navbar";
 
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Home',
-  description: 'Home Of MythicXGN',
+  title: 'OceanBubble',
+  description: 'OceanBubble Panel',
 }
 
-export default function RootLayout({
+export default function OceanBubbleLayout({
   children,
 }: {
   children: React.ReactNode

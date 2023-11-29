@@ -1,11 +1,11 @@
-import Image from "next/image";
-import background from "./images/me&dxm.png";
+import FooterComponent from "@/components/footer";
+import Navbar from "@/components/navbar";
 
 function Home() {
     return (
         <main className="Home">
-            {/* <div className="background-image-div"/> */}
-            <Image src={background} alt="background" className="background-image-div"/>
+            <Navbar></Navbar>
+            <div className="background-image-div"/>
             <div className="container-md">
                 <div className="alert alert-warning">
                     <p>Page Still Under Development.</p>
@@ -17,7 +17,7 @@ function Home() {
                         </a>
                         <h4 className="roadrage support">Support My Work!</h4>
                         <a className="btn btn1 glas button-glas" role="button" href="https://patreon.com/MythicStudios">Patreon</a>
-                        <a className="btn btn1 glas button-glas" role="button" href="https://discord.gg/MeZUrZ6Aa3">Support Discord</a>
+                        {/* <a className="btn btn1 glas button-glas" role="button" href="https://discord.gg/MeZUrZ6Aa3">Support Discord</a> */}
                     </div>
                     <div className="col col-lg-7 col-xl-6 col-box">
                         <div className="container">
@@ -27,24 +27,9 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <br/>
-                <div className="row">
-                    <div className="col text-center text-white">
-                        <h1 className="roadrage">About Me!</h1>
-                        <hr/>
-                    </div>
-                    <div className="row">
-                        <div className="col">
-                            <p className="text-center">Hi Im Mythic, aka Thomas. Im a 20 year old Developer / World Creator with the passion to make everyones vrchat experience better and more amazing.
-                                <br/>
-                                I love all of the people who support me and if there is any form of benifits you would like to see off of patreon lmk.
-                                <br/>
-                                Looking for work done? Discord bot / World? Etc. Message me on Discord! Dms are always open
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                {/* Text here */}
             </div>
+            <FooterComponent></FooterComponent>
         </main>
     );
 }
