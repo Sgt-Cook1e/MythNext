@@ -4,9 +4,6 @@ import "./styles/modesta.css";
 
 import { Inter } from 'next/font/google'
 
-import FooterComponent from '@/components/footer';
-import Navbar from "@/components/navbar";
-
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
