@@ -3,7 +3,6 @@ import Navbar from "@/components/navbar";
 
 function Home() {
     return (
-        <title><title/>
         <main className="Home">
             <Navbar></Navbar>
             <div className="background-image-div"/>
